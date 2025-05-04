@@ -13,7 +13,8 @@ class BookList(BaseModel):
 
 origins = [
     "http://localhost:5173",
-    "https://book-recommender-web-app-foze.onrender.com"
+    "https://book-recommender-web-app-foze.onrender.com",
+    "https://book-recs.advaitjoshi.com",
 ]
 
 app = FastAPI()
