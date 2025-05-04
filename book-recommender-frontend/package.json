@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prod": "npm run build && npx serve dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
