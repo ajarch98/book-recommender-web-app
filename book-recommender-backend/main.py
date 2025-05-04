@@ -11,12 +11,15 @@ logger = logging.getLogger(__name__)
 class BookList(BaseModel):
     books: list
 
-
+origins = [
+    "http://localhost:5173",
+    "https://book-recommender-web-app-foze.onrender.com"
+]
 
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5174"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
