@@ -4,7 +4,7 @@
 
 # Run the FASTAPI app using uvicorn
 backend:
-	uv run uvicorn main:app --port=8000
+	cd book-recommender-backend && uv run uvicorn main:app --port=8000
 
 # Run the React front-end
 frontend:
